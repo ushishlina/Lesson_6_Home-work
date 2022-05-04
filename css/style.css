@@ -1,0 +1,249 @@
+/* &display=swap */ 
+
+/* import не разрешается вставлять после любых объявлений кроме @charset или другого @import */
+@import "null.css";
+
+/* todo: Подключение шрифтоы только одним из способов или в CSS или в html . Этот вариант через Google*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap');
+
+/* todo: Если подключаем через внутренний плагин VS Code Google Fonts, то надо убирать лишнии начертания и добавлять хвостик &display=swap*/
+/* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,900&display=swap'); */
+
+/* todo: Подключение шрифтоы только одним из способов или в CSS или в html . Этот вариант через Google*/
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); */
+
+@font-face{
+	font-family: "Source Sans Pro";
+	src: url('../fonts/SourceSansPro-Regular.woff2') format("woff2"), url('../fonts/SourceSansPro-Regular.woff') format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face{
+	font-family: "Source Sans Pro";
+	src: url('../fonts/SourceSansPro-Black.woff2') format("woff2"), url('../fonts/SourceSansPro-Black.woff') format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face{
+	font-family: "CircularStd";
+	src: url('../fonts/CircularStd-Book.woff2') format("woff2"), url('../fonts/CircularStd-Book.woff') format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face{
+	font-family: "CircularStd";
+	src: url('../fonts/CircularStd-Medium.woff2') format("woff2"), url('../fonts/CircularStd-Medium.woff') format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face{
+	font-family: "CircularStd";
+	src: url('../fonts/CircularStd-Bold.woff2') format("woff2"), url('../fonts/CircularStd-Bold.woff') format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* body одинаково для всех страниц */
+body{
+	/* Все названия шрифтов заключать в кавычки */
+	font-style: normal;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.wrapper{
+	max-width: 1920px;
+	margin: 15px;
+}
+/* Статья из интернета. Смотреть внимательно, задано только к main */
+.main-article{
+	font-family: "Source Sans Pro";
+	line-height: 1.2;
+	max-width:  1080px;
+	
+	color: rgb(22, 9, 107);
+}
+/* Статья из макета */
+.box{
+	font-family: "Circular Std";
+	color: #5F5F5F;
+	max-width: 1440px;
+	/* todo: значение верхнего отступа поставлено временно, отступ задается чаще вниз и вправо!!! */
+	margin: 140px 0 0 0px;
+	font-size: 18px;
+	/* Более менее адекватное целостное отображение на телефоне */
+	margin: 0 auto;
+}
+
+
+
+/* todo: Статья из макета */
+
+
+.box-title{
+	text-align: center;
+	margin: 0 auto 40px ;
+	max-width: 750px;
+}
+.title-2{
+	font-weight: 500;
+	font-size: 65px;
+	line-height: 1.26;
+	color: #313131;
+	margin: 0 0 20px 0;
+}
+
+
+
+.text-title{
+	font-size: 20px;
+	line-height: 1.265;
+	margin: 0 0 224px 0;
+}
+.bold{
+	font-weight: 700;
+	opacity: 0.88;
+}
+
+
+.box-contener{
+	/* Адаптив с таким margin ужасен, подумать как задать чтобы адекватно смотрелось с телефона */
+	margin: 0 49px 100px 207px;
+	max-width: 508px;
+}
+
+.box-text{
+	margin: 0 0 125px 0;
+}
+
+.title-text{
+	color: #313131;
+	line-height: 1.3;
+	font-size: 34px;
+}
+
+.text-text{
+	line-height: 1.56;
+}
+
+.box-form{
+	margin: 0 0 100px 0;
+}
+
+.text-full-name{
+	line-height: 1.33;
+	color: #313131;
+	margin: 0 0 5px 0;
+}
+
+.text-position{
+	line-height: 1.28;
+	color: #B8B8B8;
+}
+.dots{
+	margin: 0 0 166px 0;
+}
+
+.box-picture{
+	margin: 0 0 141px 0;
+}
+
+
+
+
+/* todo: Статья из интернета */
+
+.contener{
+	max-width: 655px;
+}
+
+.box-repit{
+	text-align: justify;
+	
+}
+
+.title{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 51px;
+	margin: 0 0 20px 0;
+	text-align: center;
+}
+
+.picture{
+	margin: 0 auto 20px;
+	outline: 3px solid darkorange;
+	padding: 10px;
+	display: block;
+	box-shadow: inset 1px 1px 30px #f3e632;
+	max-width: 650px;
+}
+
+.text, .nav-menu{
+	margin: 0 0 10px 0;
+}
+
+.decoration{
+	color: rgb(13, 148, 42);
+	font-weight: 900;
+	text-shadow: 1px 1px 2px rgb(245, 93, 93);
+	opacity: 0.5;
+	border-bottom: 3px solid rgb(34, 245, 181);
+
+	/* линия подчеркивающая будет такая же как и цвет записи, у бордера можно менять цвет*/
+	/* text-decoration: underline; */
+}
+
+.items{
+	border: 3px double red;
+	margin: 0 0 5px 30px;
+}
+
+/* Пересекается и со статьей, пока так, меня устраивает */
+.list{	
+	margin: 0 0 24px 0;
+}
+
+li + .items{
+	border-radius: 20px;
+	padding: 5px;
+	box-shadow: 1px 1px 5px #1844f1;
+}
+
+/* Скрытие блоков */
+.hidden{
+	visibility: hidden;
+}
+.display{
+	display: none;
+}
+.opacity{
+	opacity: 0.01;
+}
+
+/* СКРОЛЛ при максимальной высоте */
+.scroll .items{
+	max-height: 50px;
+	overflow: auto;
+}
+
+.link{
+	font-size: 20px;
+	color: #f332c3;
+	text-shadow: 1px 1px 2px #000;
+}
+
+.section{
+	text-transform: uppercase;
+	color: rgb(60, 19, 243);
+	font-weight: 700;
+}
+
+
