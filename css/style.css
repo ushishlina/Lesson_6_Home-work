@@ -89,7 +89,7 @@ body{
 
 .box-title{
 	text-align: center;
-	margin: 0 auto 40px ;
+	margin: 0 auto 224px ;
 	max-width: 750px;
 }
 .title-2{
@@ -105,7 +105,6 @@ body{
 .text-title{
 	font-size: 20px;
 	line-height: 1.265;
-	margin: 0 0 224px 0;
 }
 .bold{
 	font-weight: 700;
@@ -152,7 +151,7 @@ body{
 }
 
 .box-picture{
-	margin: 0 0 141px 0;
+	/* margin: 0 0 141px 0; */
 }
 
 
